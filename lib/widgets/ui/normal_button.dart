@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:language_game/constants.dart';
 
 class NormalButton extends StatelessWidget {
   final String label;
@@ -32,15 +33,8 @@ class NormalButton extends StatelessWidget {
           ),
         ),
         decoration: BoxDecoration(
-          color: Colors.lightBlue,
-          boxShadow: [
-            BoxShadow(
-              color: Color(0x7f03a9f4),
-              blurRadius: 10,
-              spreadRadius: 0,
-              offset: Offset(1.0, 0.0),
-            ),
-          ],
+          gradient: kMainBlueLinearGradient,
+          boxShadow: [kMainBoxShadow],
           borderRadius: BorderRadius.all(
             Radius.circular(10),
           ),

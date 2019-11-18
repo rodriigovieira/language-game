@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:language_game/widgets/ui/cta_button.dart';
+import 'package:language_game/widgets/ui/gradient_appbar.dart';
 
 class ConfigScreen extends StatefulWidget {
   @override
@@ -9,25 +11,15 @@ class _ConfigScreenState extends State<ConfigScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Configuration"),
-        leading: IconButton(
-          icon: Icon(
-            Icons.close,
-            color: Colors.white,
-          ),
-          onPressed: () => Navigator.pop(context),
-        ),
+      appBar: GradientAppBar(
+        title: "Configuration",
       ),
       body: Container(
         child: Column(
           children: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(10),
-                ),
-              ),
+            CTAButton(
+              label: "SAVE",
+              onTap: () {},
             )
           ],
         ),
